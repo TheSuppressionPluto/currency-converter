@@ -1,4 +1,3 @@
-# currency-converter
 # Currency Converter
 
 Welcome to the Currency Converter project! This project provides a currency conversion feature using a React component called `CurrencyConverter`. It utilizes the [exchangerate-api.com](https://www.exchangerate-api.com/) API to fetch the latest exchange rates and perform conversions.
@@ -12,14 +11,14 @@ Welcome to the Currency Converter project! This project provides a currency conv
 
 ## Requirements
 
-To use the Currency Converter component, you need to have the following dependencies installed in your React project:
+To use the Currency Converter component, you need to have the following dependencies installed in your Next.js project:
 
 - React (version 16.8 or above)
 - axios (can be installed via `npm install axios` or `yarn add axios`)
 
 ## Installation
 
-To install and use the Currency Converter component in your React project, follow these steps:
+To install and use the Currency Converter component in your Next.js project, follow these steps:
 
 1. Install the dependencies by running the following command:
 
@@ -41,7 +40,7 @@ To install and use the Currency Converter component in your React project, follo
    import React from 'react';
    import CurrencyConverter from './CurrencyConverter';
 
-   const App = () => {
+   const Page = () => {
      return (
        <div>
          <CurrencyConverter />
@@ -49,40 +48,49 @@ To install and use the Currency Converter component in your React project, follo
      );
    };
 
-   export default App;
+   export default Page;
    ```
 
-   Make sure to adjust the import path based on the location of the `CurrencyConverter` component in your project.
+4. Style the component by adding CSS rules to the `styles.css` file in your Next.js project. You can modify the existing CSS or add new styles to customize the appearance of the currency converter.
+
+5. Ensure that your Next.js project is set up to handle CSS imports. You can refer to the [Next.js documentation](https://nextjs.org/docs/basic-features/built-in-css-support) for more information on setting up CSS support.
 
 ## Usage
 
-Once you have the `CurrencyConverter` component imported into your project, you can use it as shown in the example below:
+Once you have the `CurrencyConverter` component imported into your Next.js project and the styles applied, you can use it by including it in your pages:
 
 ```jsx
 import React from 'react';
-import CurrencyConverter from './CurrencyConverter';
+import CurrencyConverter from '../components/CurrencyConverter';
 
-const App = () => {
+const HomePage = () => {
   return (
     <div>
+      <h1>Home Page</h1>
       <CurrencyConverter />
     </div>
   );
 };
 
-export default App;
+export default HomePage;
 ```
+
+Make sure to adjust the import path based on the location of the `CurrencyConverter` component in your project.
 
 ## Customization
 
-The `CurrencyConverter` component provides a basic user interface. If you want to customize the appearance or behavior of the currency converter, you can modify the component code or add additional features to suit your requirements.
+The `CurrencyConverter` component provides basic styling and functionality. If you want to customize the appearance or behavior of the currency converter, you can modify the CSS rules in the `styles.css` file to fit your project's design.
+
+You can also extend the functionality of the component by adding additional options to the `<select>` elements for base and target currencies. Update the options within the `<select>` elements in the `CurrencyConverter` component to include the desired currency options.
 
 ## Contributing
 
 If you'd like to contribute to the Currency Converter project, you're more than welcome! You can contribute by:
 
 - Submitting bug reports or feature requests through the [GitHub issue tracker](https://github.com/TheSuppressionPluto/currency-converter/issues).
-- Contributing code improvements or new features by creating a [pull request](https://github.com/TheSuppressionPluto/currency-converter/pulls).
+- Contributing code improvements or new features by creating a [pull request](https://github.com
+
+/TheSuppressionPluto/currency-converter/pulls).
 
 Please make sure to follow the project's code style and guidelines when contributing.
 
